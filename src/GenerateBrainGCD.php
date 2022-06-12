@@ -2,7 +2,7 @@
 
 namespace BrainGames\GenerateBrainGCD;
 
-function getGCD($firstNum, $secondNum)
+function getGCD(int $firstNum, int $secondNum): int
 {
     $divider = min($firstNum, $secondNum);
     while ($divider > 0) {
@@ -13,7 +13,7 @@ function getGCD($firstNum, $secondNum)
     }
 }
 
-function generateRounds($roundsCount = 3): array
+function generateRounds(int $roundsCount = 3): array
 {
     $rules = 'Find the greatest common divisor of given numbers.';
     $roundsData = [];

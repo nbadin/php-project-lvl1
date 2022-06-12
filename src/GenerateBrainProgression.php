@@ -11,7 +11,7 @@ function generateProgression(int $start, int $step, int $stepsCount): array
     return $progression;
 }
 
-function generateRounds($roundsCount = 3): array
+function generateRounds(int $roundsCount = 3): array
 {
     $rules = 'What number is missing in the progression?';
     $roundsData = [];

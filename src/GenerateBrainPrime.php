@@ -2,7 +2,7 @@
 
 namespace BrainGames\GenerateBrainPrime;
 
-function isPrime($num)
+function isPrime(int $num): bool
 {
     if ($num < 2) {
         return false;
@@ -17,7 +17,7 @@ function isPrime($num)
     return true;
 }
 
-function generateRounds($roundsCount = 3): array
+function generateRounds(int $roundsCount = 3): array
 {
     $rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $roundsData = [];

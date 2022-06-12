@@ -2,7 +2,7 @@
 
 namespace BrainGames\GenerateBrainEven;
 
-function isEven($num)
+function isEven(int $num)
 {
     return $num % 2 === 0;
 }

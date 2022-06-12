@@ -19,7 +19,7 @@ function mul(int $a, int $b): int
 
 const MATH_OPERATIONS = ['+', '-', '*'];
 
-function calc($operator, $firstNum, $secondNum)
+function calc(string $operator, int $firstNum, int $secondNum)
 {
     switch ($operator) {
         case '+':
@@ -31,7 +31,7 @@ function calc($operator, $firstNum, $secondNum)
     }
 }
 
-function generateRounds($roundsCount = 3): array
+function generateRounds(int $roundsCount = 3): array
 {
     $rules = 'What is the result of the expression?';
     $roundsData = [];
