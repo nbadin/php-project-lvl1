@@ -14,14 +14,14 @@ function engine($gameData)
     line("%s", $rules);
     foreach ($roundsData as $round) {
         [$question, $correctAnswer] = $round;
-        line("Question: %d", $question);
+        line("Question: %s", $question);
         $usersAnswer = prompt('Your answer: ');
         if ($usersAnswer === $correctAnswer) {
             line('Correct!');
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $usersAnswer, $correctAnswer);
             line("Let's try again, %s!", $username);
-            exit();
+            return;
         }
     }
     line("Congratulations, %s!", $username);
