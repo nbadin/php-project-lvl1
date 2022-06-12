@@ -12,13 +12,15 @@
             "src/Cli.php",
             "src/GenerateBrainEven.php",
             "src/GenerateBrainCalc.php",
+            "src/GenerateBrainGCD.php",
             "src/Engine.php"
         ]
     },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"
