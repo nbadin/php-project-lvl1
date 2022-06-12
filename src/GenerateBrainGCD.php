@@ -2,7 +2,7 @@
 
 namespace BrainGames\GenerateBrainGCD;
 
-function getGCD(int $firstNum, int $secondNum): int
+function getGCD(int $firstNum, int $secondNum)
 {
     $divider = min($firstNum, $secondNum);
     while ($divider > 0) {
